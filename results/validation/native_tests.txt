@@ -1,1 +1,0 @@
-matrix update and independent triangle verification passed

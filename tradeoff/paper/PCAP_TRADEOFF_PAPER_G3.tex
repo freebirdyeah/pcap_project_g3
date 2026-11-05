@@ -284,7 +284,7 @@ These are measured prefixes of a committed run, not independently repeated
 experiments at four horizons. Model deserialization and ranking are charged
 to tuning for prior-based methods. Common input construction and two STATIC
 warm-up executions are excluded from deployment cost for all treatments.
-The artifact also stores whole-process elapsed and CPU costs.
+Whole-process elapsed and CPU costs are also recorded.
 
 The machine is an AMD Ryzen 5 7235HS with four physical cores/eight logical
 CPUs and approximately 7.6\,GiB visible RAM under WSL2 Linux
@@ -587,12 +587,6 @@ The practical decision should declare a useful-execution horizon, a tolerated
 payload loss, whether calibration is extra work, and how the prior is paid
 for. Reporting those conditions makes a near-best scheduling policy useful
 on its own terms without requiring it to be the fastest scheduler.
-
-\section*{Artifact and AI Assistance}
-
-The accompanying artifact contains the frozen design, fresh raw phase timings,
-direct CPU measurements, process checksums, models, source and dependency
-hashes, analysis, figures, and this LaTeX manuscript.
 
 \begin{thebibliography}{99}
 \bibitem{openmp} OpenMP Architecture Review Board. OpenMP Application

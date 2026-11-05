@@ -1,16 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
-if ! test -d vendor/LB4OMP/.git; then
-  git clone https://github.com/unibas-dmi-hpc/LB4OMP.git vendor/LB4OMP
-fi
-git -C vendor/LB4OMP checkout b9d25eca7265a4b5b3a675a1765d489775847938
-if git -C vendor/LB4OMP apply --check ../../patches/lb4omp-clang16.patch; then
-  git -C vendor/LB4OMP apply ../../patches/lb4omp-clang16.patch
-else
-  git -C vendor/LB4OMP apply --reverse --check ../../patches/lb4omp-clang16.patch
-fi
-cmake -S vendor/LB4OMP -B build/lb4omp-clang \
+: "${LB4OMP_SOURCE:?Set LB4OMP_SOURCE to an LB4OMP source checkout}"
+cmake -S "$LB4OMP_SOURCE" -B build/lb4omp-clang \
   -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=clang-16 \
   -DCMAKE_CXX_COMPILER=clang++-16 -DOPENMP_ENABLE_LIBOMPTARGET=OFF \
   -DLIBOMP_OMPT_SUPPORT=ON -DLIBOMP_ENABLE_SHARED=ON \

@@ -1,2 +1,0 @@
-/home/shaan/pcap/build/lb4omp-clang/DetectTestCompiler/CMakeFiles/edit_cache.dir
-/home/shaan/pcap/build/lb4omp-clang/DetectTestCompiler/CMakeFiles/rebuild_cache.dir

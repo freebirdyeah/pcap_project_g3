@@ -1,1 +1,0 @@
-/usr/bin/gcc -fPIC -Wl,-z,noexecstack -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 

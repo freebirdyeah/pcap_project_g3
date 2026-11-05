@@ -1,1 +1,0 @@
-/usr/bin/gcc -fPIC -Wl,--version-script=/home/shaan/pcap/vendor/LB4OMP/runtime/src/exports_so.txt -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 

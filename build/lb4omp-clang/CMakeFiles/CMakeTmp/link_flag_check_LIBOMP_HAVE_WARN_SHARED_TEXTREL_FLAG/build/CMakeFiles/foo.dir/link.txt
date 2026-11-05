@@ -1,1 +1,0 @@
-/usr/bin/clang-16 -fPIC -Wl,--warn-shared-textrel -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 

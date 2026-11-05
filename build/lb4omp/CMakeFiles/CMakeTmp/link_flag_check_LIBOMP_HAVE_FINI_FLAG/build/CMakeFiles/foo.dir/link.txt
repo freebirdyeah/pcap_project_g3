@@ -1,1 +1,0 @@
-/usr/bin/gcc -fPIC -Wl,-fini=__kmp_internal_end_fini -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
