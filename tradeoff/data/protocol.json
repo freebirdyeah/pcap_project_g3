@@ -1,0 +1,456 @@
+{
+  "question": "selection cost / CPU versus residual scheduling slowdown",
+  "seed": 202610231,
+  "blocks": 5,
+  "horizon": 500,
+  "prefixes": [
+    10,
+    50,
+    100,
+    500
+  ],
+  "repeats_per_candidate": 3,
+  "reference_observations": 25,
+  "budgets": [
+    1,
+    2,
+    4,
+    8,
+    12
+  ],
+  "policies": [
+    "bestfixed",
+    "prior",
+    "budget2",
+    "budget4",
+    "budget8",
+    "random4",
+    "exhaustive"
+  ],
+  "quality_tolerances": [
+    0.05,
+    0.1
+  ],
+  "training": [
+    {
+      "id": "mandelbrot_s0_p2",
+      "kind": "mandelbrot",
+      "n": 16384,
+      "seed": 0,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "mandelbrot_s0_p4",
+      "kind": "mandelbrot",
+      "n": 16384,
+      "seed": 0,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "mandelbrot_s1_p2",
+      "kind": "mandelbrot",
+      "n": 65536,
+      "seed": 1,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "mandelbrot_s1_p4",
+      "kind": "mandelbrot",
+      "n": 65536,
+      "seed": 1,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "mandelbrot_s2_p2",
+      "kind": "mandelbrot",
+      "n": 25600,
+      "seed": 2,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s2_p4",
+      "kind": "mandelbrot",
+      "n": 25600,
+      "seed": 2,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s3_p2",
+      "kind": "mandelbrot",
+      "n": 50176,
+      "seed": 3,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s3_p4",
+      "kind": "mandelbrot",
+      "n": 50176,
+      "seed": 3,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triad_s0_p2",
+      "kind": "triad",
+      "n": 262144,
+      "seed": 0,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "triad_s0_p4",
+      "kind": "triad",
+      "n": 262144,
+      "seed": 0,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "triad_s1_p2",
+      "kind": "triad",
+      "n": 1048576,
+      "seed": 1,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "triad_s1_p4",
+      "kind": "triad",
+      "n": 1048576,
+      "seed": 1,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "triad_s2_p2",
+      "kind": "triad",
+      "n": 393216,
+      "seed": 2,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triad_s2_p4",
+      "kind": "triad",
+      "n": 393216,
+      "seed": 2,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triad_s3_p2",
+      "kind": "triad",
+      "n": 786432,
+      "seed": 3,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triad_s3_p4",
+      "kind": "triad",
+      "n": 786432,
+      "seed": 3,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s0_p2",
+      "kind": "triangle",
+      "n": 512,
+      "seed": 0,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "triangle_s0_p4",
+      "kind": "triangle",
+      "n": 512,
+      "seed": 0,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "triangle_s1_p2",
+      "kind": "triangle",
+      "n": 2048,
+      "seed": 1,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "triangle_s1_p4",
+      "kind": "triangle",
+      "n": 2048,
+      "seed": 1,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "triangle_s2_p2",
+      "kind": "triangle",
+      "n": 1024,
+      "seed": 2,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s2_p4",
+      "kind": "triangle",
+      "n": 1024,
+      "seed": 2,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s3_p2",
+      "kind": "triangle",
+      "n": 1536,
+      "seed": 3,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s3_p4",
+      "kind": "triangle",
+      "n": 1536,
+      "seed": 3,
+      "p": 4,
+      "split": "test"
+    }
+  ],
+  "testing": [
+    {
+      "id": "mandelbrot_s4_p2",
+      "kind": "mandelbrot",
+      "n": 36864,
+      "seed": 4,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s4_p4",
+      "kind": "mandelbrot",
+      "n": 36864,
+      "seed": 4,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s5_p2",
+      "kind": "mandelbrot",
+      "n": 57600,
+      "seed": 5,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s5_p4",
+      "kind": "mandelbrot",
+      "n": 57600,
+      "seed": 5,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s6_p2",
+      "kind": "mandelbrot",
+      "n": 20736,
+      "seed": 6,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s6_p4",
+      "kind": "mandelbrot",
+      "n": 20736,
+      "seed": 6,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s7_p2",
+      "kind": "mandelbrot",
+      "n": 43264,
+      "seed": 7,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s7_p4",
+      "kind": "mandelbrot",
+      "n": 43264,
+      "seed": 7,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triad_s4_p2",
+      "kind": "triad",
+      "n": 524288,
+      "seed": 4,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triad_s4_p4",
+      "kind": "triad",
+      "n": 524288,
+      "seed": 4,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triad_s5_p2",
+      "kind": "triad",
+      "n": 655360,
+      "seed": 5,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triad_s5_p4",
+      "kind": "triad",
+      "n": 655360,
+      "seed": 5,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triad_s6_p2",
+      "kind": "triad",
+      "n": 458752,
+      "seed": 6,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triad_s6_p4",
+      "kind": "triad",
+      "n": 458752,
+      "seed": 6,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triad_s7_p2",
+      "kind": "triad",
+      "n": 917504,
+      "seed": 7,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triad_s7_p4",
+      "kind": "triad",
+      "n": 917504,
+      "seed": 7,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s4_p2",
+      "kind": "triangle",
+      "n": 768,
+      "seed": 4,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s4_p4",
+      "kind": "triangle",
+      "n": 768,
+      "seed": 4,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s5_p2",
+      "kind": "triangle",
+      "n": 1792,
+      "seed": 5,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s5_p4",
+      "kind": "triangle",
+      "n": 1792,
+      "seed": 5,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s6_p2",
+      "kind": "triangle",
+      "n": 1280,
+      "seed": 6,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s6_p4",
+      "kind": "triangle",
+      "n": 1280,
+      "seed": 6,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s7_p2",
+      "kind": "triangle",
+      "n": 1920,
+      "seed": 7,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s7_p4",
+      "kind": "triangle",
+      "n": 1920,
+      "seed": 7,
+      "p": 4,
+      "split": "test"
+    }
+  ],
+  "prior": {
+    "weight": 0.25,
+    "ridge": 1.0,
+    "alpha": 0.025
+  },
+  "frozen_unix": 1792747411.5163064,
+  "source_sha256": "7ae0a9db81d60d90150a54020ccc404ca7912273f49a46c7210f901eb0dae792",
+  "shared_source_sha256": "8b6960f94aea534fd1bef74ff1a3f7254e991a9e6ca3e2036115bcb46be36bc2",
+  "executable_sha256": "482362701636a96dda0586a376ac90f49eb5b5cfa47913f8031faf6fd4a82724",
+  "measurement": "CLOCK_MONOTONIC wall and CLOCK_PROCESS_CPUTIME_ID CPU, all runtime threads",
+  "semantics": "additional calibration then 500 useful executions; no in-situ-work credit",
+  "environment": {
+    "OMP_PLACES": "{0},{2},{4},{6}",
+    "OMP_PROC_BIND": "close",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_WAIT_POLICY": "ACTIVE",
+    "KMP_BLOCKTIME": "200",
+    "KMP_CPU_SPEED": "3200",
+    "KMP_Golden_Chunksize": "1",
+    "KMP_RL_ALPHA": "0.5",
+    "KMP_RL_GAMMA": "0.5",
+    "KMP_RL_ALPHA_DECAY": "0.05",
+    "KMP_RL_EPS_DECAY": "0",
+    "KMP_RL_REWARD": "looptime",
+    "KMP_RL_INIT": "zero",
+    "KMP_RL_POLICY": "explore_first",
+    "KMP_RL_DECAY": "exponential",
+    "KMP_RL_AVG_WINDOW": "10",
+    "KMP_RL_REWARD_NUM": "0.01,-2.0,-4.0",
+    "KMP_RL_TAU": "1.5",
+    "KMP_RL_EPSILON": "0.9",
+    "KMP_RL_AGENT_STATS": "notOutputtingStats",
+    "OMP_NUM_THREADS": "4"
+  }
+}

@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/src_to_link.c
+

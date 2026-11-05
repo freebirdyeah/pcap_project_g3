@@ -1,0 +1,230 @@
+{
+  "lscpu": "Architecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        48 bits physical, 48 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               8\nOn-line CPU(s) list:                  0-7\nVendor ID:                            AuthenticAMD\nModel name:                           AMD Ryzen 5 7235HS\nCPU family:                           25\nModel:                                68\nThread(s) per core:                   2\nCore(s) per socket:                   4\nSocket(s):                            1\nStepping:                             1\nBogoMIPS:                             6387.83\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr arat umip vaes vpclmulqdq rdpid fsrm\nHypervisor vendor:                    Microsoft\nVirtualization type:                  full\nL1d cache:                            128 KiB (4 instances)\nL1i cache:                            128 KiB (4 instances)\nL2 cache:                             2 MiB (4 instances)\nL3 cache:                             8 MiB (1 instance)\nNUMA node(s):                         1\nNUMA node0 CPU(s):                    0-7\nVulnerability Gather data sampling:   Not affected\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Not affected\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Not affected\nVulnerability Spec rstack overflow:   Vulnerable: Safe RET, no microcode\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\n",
+  "topology": "CPU CORE SOCKET NODE\n  0    0      0    0\n  1    0      0    0\n  2    1      0    0\n  3    1      0    0\n  4    2      0    0\n  5    2      0    0\n  6    3      0    0\n  7    3      0    0\n",
+  "uname": "Linux LOQShaan 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux\n",
+  "compiler": "Ubuntu clang version 16.0.6 (23ubuntu4)\nTarget: x86_64-pc-linux-gnu\nThread model: posix\nInstalledDir: /usr/bin\n",
+  "lb4omp_commit": "b9d25eca7265a4b5b3a675a1765d489775847938\n",
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "scipy": "1.17.1",
+  "matplotlib": "3.6.3",
+  "environment": {
+    "OMP_PLACES": "{0},{2},{4},{6}",
+    "OMP_PROC_BIND": "close",
+    "OMP_DYNAMIC": "FALSE",
+    "OMP_WAIT_POLICY": "ACTIVE",
+    "KMP_BLOCKTIME": "200",
+    "KMP_CPU_SPEED": "3200",
+    "KMP_Golden_Chunksize": "1",
+    "KMP_RL_ALPHA": "0.5",
+    "KMP_RL_GAMMA": "0.5",
+    "KMP_RL_ALPHA_DECAY": "0.05",
+    "KMP_RL_EPS_DECAY": "0",
+    "KMP_RL_REWARD": "looptime",
+    "KMP_RL_INIT": "zero",
+    "KMP_RL_POLICY": "explore_first",
+    "KMP_RL_DECAY": "exponential",
+    "KMP_RL_AVG_WINDOW": "10",
+    "INVERSE_REWARD_MULT": "10",
+    "KMP_RL_REWARD_NUM": "0.01,-2.0,-4.0",
+    "KMP_RL_TAU": "1.5",
+    "KMP_RL_EPSILON": "0.9",
+    "KMP_RL_AGENT_STATS": "notOutputtingStats",
+    "OMP_NUM_THREADS": "4"
+  },
+  "captured_unix": 1792741318.1893225,
+  "configs": [
+    {
+      "id": "mandelbrot_s0_p2",
+      "kind": "mandelbrot",
+      "n": 16384,
+      "seed": 0,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "mandelbrot_s0_p4",
+      "kind": "mandelbrot",
+      "n": 16384,
+      "seed": 0,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "mandelbrot_s1_p2",
+      "kind": "mandelbrot",
+      "n": 65536,
+      "seed": 1,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "mandelbrot_s1_p4",
+      "kind": "mandelbrot",
+      "n": 65536,
+      "seed": 1,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "mandelbrot_s2_p2",
+      "kind": "mandelbrot",
+      "n": 25600,
+      "seed": 2,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s2_p4",
+      "kind": "mandelbrot",
+      "n": 25600,
+      "seed": 2,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s3_p2",
+      "kind": "mandelbrot",
+      "n": 50176,
+      "seed": 3,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "mandelbrot_s3_p4",
+      "kind": "mandelbrot",
+      "n": 50176,
+      "seed": 3,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triad_s0_p2",
+      "kind": "triad",
+      "n": 262144,
+      "seed": 0,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "triad_s0_p4",
+      "kind": "triad",
+      "n": 262144,
+      "seed": 0,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "triad_s1_p2",
+      "kind": "triad",
+      "n": 1048576,
+      "seed": 1,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "triad_s1_p4",
+      "kind": "triad",
+      "n": 1048576,
+      "seed": 1,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "triad_s2_p2",
+      "kind": "triad",
+      "n": 393216,
+      "seed": 2,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triad_s2_p4",
+      "kind": "triad",
+      "n": 393216,
+      "seed": 2,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triad_s3_p2",
+      "kind": "triad",
+      "n": 786432,
+      "seed": 3,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triad_s3_p4",
+      "kind": "triad",
+      "n": 786432,
+      "seed": 3,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s0_p2",
+      "kind": "triangle",
+      "n": 512,
+      "seed": 0,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "triangle_s0_p4",
+      "kind": "triangle",
+      "n": 512,
+      "seed": 0,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "triangle_s1_p2",
+      "kind": "triangle",
+      "n": 2048,
+      "seed": 1,
+      "p": 2,
+      "split": "train"
+    },
+    {
+      "id": "triangle_s1_p4",
+      "kind": "triangle",
+      "n": 2048,
+      "seed": 1,
+      "p": 4,
+      "split": "train"
+    },
+    {
+      "id": "triangle_s2_p2",
+      "kind": "triangle",
+      "n": 1024,
+      "seed": 2,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s2_p4",
+      "kind": "triangle",
+      "n": 1024,
+      "seed": 2,
+      "p": 4,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s3_p2",
+      "kind": "triangle",
+      "n": 1536,
+      "seed": 3,
+      "p": 2,
+      "split": "test"
+    },
+    {
+      "id": "triangle_s3_p4",
+      "kind": "triangle",
+      "n": 1536,
+      "seed": 3,
+      "p": 4,
+      "split": "test"
+    }
+  ]
+}

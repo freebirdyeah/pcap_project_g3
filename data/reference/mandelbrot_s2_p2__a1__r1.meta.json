@@ -1,0 +1,31 @@
+{
+  "config": {
+    "id": "mandelbrot_s2_p2",
+    "kind": "mandelbrot",
+    "n": 25600,
+    "seed": 2,
+    "p": 2,
+    "split": "test"
+  },
+  "policy": "fixed",
+  "horizon": 20,
+  "arm": 1,
+  "golden": true,
+  "command": [
+    "/home/shaan/pcap/build/experiment",
+    "mandelbrot",
+    "25600",
+    "2",
+    "2",
+    "fixed",
+    "20",
+    "none",
+    "/home/shaan/pcap/data/reference/mandelbrot_s2_p2__a1__r1.csv",
+    "1"
+  ],
+  "started_unix": 1792741361.7445686,
+  "elapsed_s": 0.0711514949798584,
+  "stderr": "CHECK 903935 903935 WALL 0.05098191200158908 N 25600 P 2\n",
+  "returncode": 0,
+  "csv_sha256": "238c5270cd82e42dca49d86ef2c7c2d8ee5f7b18fe241e383e5e73618fa58743"
+}

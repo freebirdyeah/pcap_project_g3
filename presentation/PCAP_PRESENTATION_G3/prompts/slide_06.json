@@ -1,0 +1,41 @@
+{
+  "slide": 6,
+  "title": "The machine and experiment",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"English\",\n  \"slide_number\": 6,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nExplain this OpenMP scheduling paper to undergraduates and an unfamiliar professor, with minimal slides and patient notes.\n\n## Required Background\n{\n  \"deck_context\": {\n    \"source_summary\": \"We compare 12-candidate scheduling search with a training-guided four-candidate shortlist on one four-core WSL2 machine. Guided 4 saves 65.0% tuning wall time and 65.9% tuning CPU time. At 50 useful loops after EXTRA calibration and with a CACHED model, total elapsed saving is about 27.5%. No clear benefit when exploratory executions already perform useful work.\",\n    \"core_claim\": \"Count both choosing cost and useful execution cost, including a share of training. Benefits are conditional; model ranking is not proven necessary.\",\n    \"canonical_terms\": [\n      \"scheduler = rule distributing loop iterations to threads\",\n      \"arm = scheduler option\",\n      \"prior = previously trained model\",\n      \"payload = useful execution after commitment\",\n      \"Full 12 is a finite noisy search, not a true optimum\"\n    ]\n  },\n  \"slide_local_context\": {\n    \"approved_content_and_visual_instructions\": \"Visible bullets:\\n- AMD Ryzen 5 7235HS; four physical CPU cores; WSL2 Linux.\\n- Tested with two and four threads using C++ and OpenMP.\\n- 24 test scenarios, seven methods, five repeated blocks: 840 main runs.\\n\\nReminder box: “One machine and three workload families: the conclusions have that scope.”\\nRole: hardware and study design. Notes explain that there are 12 distinct test inputs, each used at two thread counts; repeated loops are not independent applications.\"\n  }\n}\n\n## Global Style\n{\n  \"name\": \"Simple Light Mode — minimal professional adaptation\",\n  \"visual_direction\": \"Import the clean white Helvetica Neue visual identity of the retained reference. Match the accepted sample. The user explicitly removes supertitles, numbers, decoration and elaborate frames.\",\n  \"color_palette\": \"Pure white background; black text; restrained gray chart bars and occasional pale gray reminder box.\",\n  \"typography\": \"Large bold Helvetica Neue-style sans-serif title at the same top-left position; left-aligned professional sans-serif body. Center only equations and charts.\",\n  \"texture_and_finish\": \"Flat plain professional presentation; no shadows, illustrations, gradients, ornamental lines, logos, slide numbers, page borders or footer.\"\n}\n\n## Input Images\n\n- Image 1: /home/shaan/pcap/presentation/PCAP_PRESENTATION_G3/origin_image/slide_13.png — Accepted sample slide style reference; Use only the typography, palette, spacing and visual identity, not its title or content.\n\n\n## Slide\n{\n  \"number\": 6,\n  \"title\": \"The machine and experiment\",\n  \"role\": \"technical explainer\",\n  \"intent\": \"One simple understandable claim; retain the approved research facts.\"\n}\n\n## Text\n{\n  \"title\": \"The machine and experiment\",\n  \"key_points\": [\n    \"AMD Ryzen 5 7235HS; four physical CPU cores; WSL2 Linux.\",\n    \"Tested with two and four threads using C++ and OpenMP.\",\n    \"24 test scenarios, seven methods, five repeated blocks: 840 main runs.\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\n{\n  \"composition\": \"One bold top-left heading, three left-aligned bullets; center the equation, diagram or chart below; one small pale reminder box near the bottom when requested.\",\n  \"spacing\": \"Keep each bullet to one or two lines; heading 42–46pt, body 25–28pt at widescreen slide scale. No upper label or footer.\"\n}\n\n## Visual Elements\n{\n  \"main_visual\": \"\"\n}\n\n## Constraints\n[\n  \"English only. Do not display the slide number or any meta instructions.\",\n  \"White background, black sans-serif type, no decorative imagery or logos.\",\n  \"Use the title and three bullets exactly as provided; do not add facts.\",\n  \"The notes in local_context are explanatory instructions, not additional slide text.\",\n  \"Render centered equations carefully, with true fractions and subscripts.\",\n  \"Do not show outline labels such as Role, Reminder box, Source, or Visible bullets.\"\n]\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render Chinese text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_06.png",
+  "input_images": [
+    {
+      "path": "/home/shaan/pcap/presentation/PCAP_PRESENTATION_G3/origin_image/slide_13.png",
+      "role": "Accepted sample slide style reference",
+      "fidelity": "Use only the typography, palette, spacing and visual identity, not its title or content."
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen__imagegen",
+    "mode": "edit",
+    "model/config": "built-in default; exact model not exposed",
+    "prompt_source": "Cost-equation sample prompt in the parent conversation",
+    "approved_sample_path": "/home/shaan/pcap/presentation/PCAP_PRESENTATION_G3/origin_image/slide_13.png",
+    "input_context_preparation": "Inspect every local reference image with view_image, then pass referenced_image_paths to the same built-in tool.",
+    "handoff_rule": "Use this exact backend and edit mode. Return a blocker if unavailable. Save the original tool-generated bytes, without drawing or overlays."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

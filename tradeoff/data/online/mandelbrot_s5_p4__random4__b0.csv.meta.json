@@ -1,0 +1,39 @@
+{
+  "config": {
+    "id": "mandelbrot_s5_p4",
+    "kind": "mandelbrot",
+    "n": 57600,
+    "seed": 5,
+    "p": 4,
+    "split": "test"
+  },
+  "policy": "random",
+  "horizon": 500,
+  "budget": 4,
+  "arm": 0,
+  "rep": 0,
+  "started_unix": 1792747714.6061888,
+  "process_wall_s": 1.8380302430014126,
+  "process_cpu_s": 7.32379399999999,
+  "stderr": "CHECK 2909397 2909397 SELECTED 6 EVALUATIONS 12\n",
+  "stdout": "",
+  "returncode": 0,
+  "command": [
+    "/home/shaan/pcap/build/tradeoff",
+    "mandelbrot",
+    "57600",
+    "5",
+    "4",
+    "random",
+    "500",
+    "none",
+    "/home/shaan/pcap/tradeoff/data/online/mandelbrot_s5_p4__random4__b0.csv",
+    "4",
+    "0"
+  ],
+  "executable_sha256": "482362701636a96dda0586a376ac90f49eb5b5cfa47913f8031faf6fd4a82724",
+  "model_sha256": null,
+  "protocol_sha256": "241af3a4f2eff3c164b4c10d90633253a3ac0fc16328c3dee67803aec3ec3118",
+  "csv_sha256": "7d040645a40bac7301123a9eb43937f8e5617578cae41d7272e1a876ea8cf51f",
+  "summary_sha256": "4776d53234664215d83cdea5e58c67d2f95da44abd841e6480d1170933b912ce"
+}

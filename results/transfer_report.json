@@ -1,0 +1,33 @@
+{
+  "exploratory": true,
+  "run_count": 108,
+  "loop_instances": 54000,
+  "comparisons": [
+    {
+      "baseline": "bestfixed",
+      "speedup": 0.9840698383618949,
+      "ci_low": 0.9378809714703418,
+      "ci_high": 1.0176582218944121
+    },
+    {
+      "baseline": "greedy",
+      "speedup": 0.9963225390425984,
+      "ci_low": 0.9779593712468982,
+      "ci_high": 1.0156920238181792
+    }
+  ],
+  "family": {
+    "mandelbrot": {
+      "bestfixed": 0.997625965035314,
+      "greedy": 1.0038029128523667
+    },
+    "triad": {
+      "bestfixed": 0.95180964094315,
+      "greedy": 0.9947151575086045
+    },
+    "triangle": {
+      "bestfixed": 1.0035983055339284,
+      "greedy": 0.990495890553459
+    }
+  }
+}

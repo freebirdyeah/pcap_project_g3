@@ -1,0 +1,1 @@
+/usr/bin/g++;GNU;13.3.0;-fopenmp

@@ -1,0 +1,1 @@
+/usr/bin/gcc -fPIC -static-libgcc -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 

@@ -1,0 +1,31 @@
+{
+  "config": {
+    "id": "triad_s3_p2",
+    "kind": "triad",
+    "n": 786432,
+    "seed": 3,
+    "p": 2,
+    "split": "test"
+  },
+  "policy": "greedy",
+  "horizon": 500,
+  "arm": 0,
+  "golden": true,
+  "command": [
+    "/home/shaan/pcap/build/experiment",
+    "triad",
+    "786432",
+    "3",
+    "2",
+    "greedy",
+    "500",
+    "/home/shaan/pcap/data/model.txt",
+    "/home/shaan/pcap/data/online/triad_s3_p2__greedy__r4.csv",
+    "0"
+  ],
+  "started_unix": 1792742511.634976,
+  "elapsed_s": 0.6915183067321777,
+  "stderr": "CHECK 5625345.0400001574 5625345.0400001574 WALL 0.63202322400138655 N 786432 P 2\n",
+  "returncode": 0,
+  "csv_sha256": "9fe7d05471f48599e44dde1d8a6167cb43cdaf56d39305451d9d1402ea4d1daf"
+}

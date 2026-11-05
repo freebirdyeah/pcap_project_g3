@@ -1,0 +1,24 @@
+{
+  "fit_wall_s": 1.6198082200025965,
+  "fit_cpu_s": 1.5996008000000002,
+  "calibration_wall_s": 34.34871648098124,
+  "calibration_cpu_s": 82.29226500000001,
+  "best_fixed": 1,
+  "best_fixed_name": "SS",
+  "training_ids": [
+    "mandelbrot_s0_p2",
+    "mandelbrot_s0_p4",
+    "mandelbrot_s1_p2",
+    "mandelbrot_s1_p4",
+    "triad_s0_p2",
+    "triad_s0_p4",
+    "triad_s1_p2",
+    "triad_s1_p4",
+    "triangle_s0_p2",
+    "triangle_s0_p4",
+    "triangle_s1_p2",
+    "triangle_s1_p4"
+  ],
+  "model_sha256": "52b379adc83a99305d4a93a867a70380a1447192ca4b2f24f313865aa9521611",
+  "fitted_unix": 1792747449.9632635
+}

@@ -1,0 +1,31 @@
+{
+  "config": {
+    "id": "triangle_s1_p2",
+    "kind": "triangle",
+    "n": 2048,
+    "seed": 1,
+    "p": 2,
+    "split": "train"
+  },
+  "policy": "fixed",
+  "horizon": 20,
+  "arm": 6,
+  "golden": true,
+  "command": [
+    "/home/shaan/pcap/build/experiment",
+    "triangle",
+    "2048",
+    "1",
+    "2",
+    "fixed",
+    "20",
+    "none",
+    "/home/shaan/pcap/data/calibration/triangle_s1_p2__a6__r2.csv",
+    "6"
+  ],
+  "started_unix": 1792741331.1236017,
+  "elapsed_s": 0.1847994327545166,
+  "stderr": "CHECK 55506 55506 WALL 0.1462037870005588 N 2048 P 2\n",
+  "returncode": 0,
+  "csv_sha256": "6ab52af12aaf550a521efe5cb987b090d340e18ae14fd90c922c25b7028239e7"
+}

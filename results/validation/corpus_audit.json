@@ -1,0 +1,17 @@
+{
+  "processes": 1572,
+  "logged_instances": 371280,
+  "stage_counts": {
+    "calibration": 432,
+    "reference": 432,
+    "online": 600,
+    "transfer": 108
+  },
+  "hashes_verified": 1572,
+  "output_checks_passed": 1572,
+  "training_test_ids_disjoint": true,
+  "model_reproduces_from_training_only": true,
+  "protocol_and_model_predate_test": true,
+  "model_sha256": "690db5de1e9c914b75b23e9987832e8c28cead544cf9da66eacce012e4bf5949",
+  "protocol_sha256": "5b80c26a465736a8b8af1bf926e443275c1584eb413e117a521159fb76f4c8bf"
+}

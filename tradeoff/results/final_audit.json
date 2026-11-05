@@ -1,0 +1,18 @@
+{
+  "processes": 3144,
+  "logged_instances": 595896,
+  "stage_counts": {
+    "calibration": 432,
+    "reference": 1440,
+    "online": 840,
+    "insitu": 432
+  },
+  "raw_and_summary_hashes_verified": 6288,
+  "all_output_checks_passed": true,
+  "frozen_source_binary_model_intact": true,
+  "prior_cost_recomputed": true,
+  "primary_useful_executions": 420000,
+  "insitu_useful_executions": 118800,
+  "source_sha256": "7ae0a9db81d60d90150a54020ccc404ca7912273f49a46c7210f901eb0dae792",
+  "model_sha256": "52b379adc83a99305d4a93a867a70380a1447192ca4b2f24f313865aa9521611"
+}

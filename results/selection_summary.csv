@@ -1,0 +1,10 @@
+policy,distinct_arms,distinct_first50,switch_count,modal_fraction
+bestfixed,2.0,2.0,1.0,0.998
+cold,12.0,12.0,44.0,0.879
+exhaustive,12.0,12.0,12.0,0.978
+greedy,2.0,2.0,1.0,0.998
+gss,2.0,2.0,1.0,0.998
+reduced,6.0,6.0,20.0,0.9359999999999999
+static,1.0,1.0,0.0,1.0
+ucb,12.0,12.0,218.5,0.305
+warm,11.0,8.0,25.5,0.9319999999999999

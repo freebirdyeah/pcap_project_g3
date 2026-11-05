@@ -1,0 +1,15 @@
+{
+  "secondary": true,
+  "semantics": "exactly H total useful calls, including all calibration calls",
+  "horizons": [
+    50,
+    500
+  ],
+  "blocks": 3,
+  "policies": [
+    "prior",
+    "budget4",
+    "exhaustive"
+  ],
+  "statement": "No changes to the primary binary, fitted model, or frozen main protocol."
+}

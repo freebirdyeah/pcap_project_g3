@@ -1,0 +1,39 @@
+{
+  "config": {
+    "id": "triangle_s4_p4",
+    "kind": "triangle",
+    "n": 768,
+    "seed": 4,
+    "p": 4,
+    "split": "test"
+  },
+  "policy": "exhaustive",
+  "horizon": 500,
+  "budget": 12,
+  "arm": 0,
+  "rep": 2,
+  "started_unix": 1792748068.7322104,
+  "process_wall_s": 0.9674447110010078,
+  "process_cpu_s": 3.8384920000000484,
+  "stderr": "CHECK 41138 41138 SELECTED 5 EVALUATIONS 36\n",
+  "stdout": "",
+  "returncode": 0,
+  "command": [
+    "/home/shaan/pcap/build/tradeoff",
+    "triangle",
+    "768",
+    "4",
+    "4",
+    "exhaustive",
+    "500",
+    "none",
+    "/home/shaan/pcap/tradeoff/data/online/triangle_s4_p4__exhaustive__b2.csv",
+    "12",
+    "0"
+  ],
+  "executable_sha256": "482362701636a96dda0586a376ac90f49eb5b5cfa47913f8031faf6fd4a82724",
+  "model_sha256": null,
+  "protocol_sha256": "241af3a4f2eff3c164b4c10d90633253a3ac0fc16328c3dee67803aec3ec3118",
+  "csv_sha256": "37e4a633860933d80eb2fa64f11024f091f0a842b854440c4a60a68fbb3ed72d",
+  "summary_sha256": "98aa90e927950ffe73c2d4eeccf8fe28e73d4afd875b1cbc0462fb7e1aa16d8a"
+}

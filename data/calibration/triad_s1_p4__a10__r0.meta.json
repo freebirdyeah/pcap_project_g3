@@ -1,0 +1,31 @@
+{
+  "config": {
+    "id": "triad_s1_p4",
+    "kind": "triad",
+    "n": 1048576,
+    "seed": 1,
+    "p": 4,
+    "split": "train"
+  },
+  "policy": "fixed",
+  "horizon": 20,
+  "arm": 10,
+  "golden": true,
+  "command": [
+    "/home/shaan/pcap/build/experiment",
+    "triad",
+    "1048576",
+    "1",
+    "4",
+    "fixed",
+    "20",
+    "none",
+    "/home/shaan/pcap/data/calibration/triad_s1_p4__a10__r0.csv",
+    "10"
+  ],
+  "started_unix": 1792741326.503621,
+  "elapsed_s": 0.09618258476257324,
+  "stderr": "CHECK 7500462.1990003418 7500462.1990003418 WALL 0.032037183000284131 N 1048576 P 4\n",
+  "returncode": 0,
+  "csv_sha256": "4cd287a2d914650110684c50b2f710a2c84fa34e4dcc9cb7d6e8085d45024897"
+}

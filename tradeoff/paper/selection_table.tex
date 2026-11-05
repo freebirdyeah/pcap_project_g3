@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\centering\small
+\caption{Measured tuning cost relative to Full 12. Savings are paired geometric effects; median wall milliseconds are descriptive.}
+\label{tab:selection}
+\begin{tabular}{lrrrr}
+\hline
+Policy & Evaluations & Median wall (ms) & Wall saved (\%) & CPU saved (\%)\\
+\hline
+Best fixed & 0 & 0.01 & 100.0 & 100.0 \\
+Prior only & 3 & 8.24 & 91.1 & 92.5 \\
+Guided 2 & 6 & 16.45 & 82.4 & 83.2 \\
+Guided 4 & 12 & 32.16 & 65.0 & 65.9 \\
+Guided 8 & 24 & 63.48 & 31.9 & 32.6 \\
+Random 4 & 12 & 30.91 & 67.2 & 67.7 \\
+Full 12 & 36 & 91.14 & 0.0 & 0.0 \\
+\hline
+\end{tabular}
+\end{table*}

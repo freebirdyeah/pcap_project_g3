@@ -1,0 +1,2118 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:18 (project)"
+    message: |
+      The system is: Linux - 6.6.87.2-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:18 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/clang-16 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:18 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/clang++-16 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:18 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3XvTQZ"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3XvTQZ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3XvTQZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3b681/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3b681.dir/build.make CMakeFiles/cmTC_3b681.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3XvTQZ'
+        Building C object CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o
+        /usr/bin/clang-16   -v -MD -MT CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 16.0.6 (23ubuntu4)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/lib/cuda, version 
+         (in-process)
+         "/usr/lib/llvm-16/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3XvTQZ -resource-dir /usr/lib/llvm-16/lib/clang/16 -dependency-file CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3XvTQZ -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-16/lib/clang/16/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_3b681
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b681.dir/link.txt --verbose=1
+        /usr/bin/clang-16  -v -rdynamic CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -o cmTC_3b681 
+        Ubuntu clang version 16.0.6 (23ubuntu4)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/lib/cuda, version 
+         "/usr/bin/ld" -pie -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3b681 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3XvTQZ'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:18 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-16/lib/clang/16/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-16/lib/clang/16/include] ==> [/usr/lib/llvm-16/lib/clang/16/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-16/lib/clang/16/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:18 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3XvTQZ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3b681/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_3b681.dir/build.make CMakeFiles/cmTC_3b681.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3XvTQZ']
+        ignore line: [Building C object CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/clang-16   -v -MD -MT CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 16.0.6 (23ubuntu4)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/lib/cuda  version ]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-16/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3XvTQZ -resource-dir /usr/lib/llvm-16/lib/clang/16 -dependency-file CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3XvTQZ -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-16/lib/clang/16/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_3b681]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b681.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang-16  -v -rdynamic CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -o cmTC_3b681 ]
+        ignore line: [Ubuntu clang version 16.0.6 (23ubuntu4)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/lib/cuda  version ]
+        link line: [ "/usr/bin/ld" -pie -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_3b681 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3b681] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_3b681.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:18 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VxsKnO"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VxsKnO"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VxsKnO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_62fb1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_62fb1.dir/build.make CMakeFiles/cmTC_62fb1.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VxsKnO'
+        Building CXX object CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++-16   -v -MD -MT CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 16.0.6 (23ubuntu4)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/lib/cuda, version 
+         (in-process)
+         "/usr/lib/llvm-16/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VxsKnO -resource-dir /usr/lib/llvm-16/lib/clang/16 -dependency-file CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VxsKnO -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13
+         /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward
+         /usr/lib/llvm-16/lib/clang/16/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_62fb1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62fb1.dir/link.txt --verbose=1
+        /usr/bin/clang++-16  -v -rdynamic CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_62fb1 
+        Ubuntu clang version 16.0.6 (23ubuntu4)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+        Found CUDA installation: /usr/lib/cuda, version 
+         "/usr/bin/ld" -pie -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_62fb1 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VxsKnO'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:18 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13]
+          add: [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward]
+          add: [/usr/lib/llvm-16/lib/clang/16/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/llvm-16/lib/clang/16/include] ==> [/usr/lib/llvm-16/lib/clang/16/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/llvm-16/lib/clang/16/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:18 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VxsKnO']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_62fb1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_62fb1.dir/build.make CMakeFiles/cmTC_62fb1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VxsKnO']
+        ignore line: [Building CXX object CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++-16   -v -MD -MT CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 16.0.6 (23ubuntu4)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/lib/cuda  version ]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-16/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VxsKnO -resource-dir /usr/lib/llvm-16/lib/clang/16 -dependency-file CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-16/lib/clang/16/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VxsKnO -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.6 based upon LLVM 16.0.6 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward]
+        ignore line: [ /usr/lib/llvm-16/lib/clang/16/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_62fb1]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62fb1.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang++-16  -v -rdynamic CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_62fb1 ]
+        ignore line: [Ubuntu clang version 16.0.6 (23ubuntu4)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/12]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [Found CUDA installation: /usr/lib/cuda  version ]
+        link line: [ "/usr/bin/ld" -pie -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_62fb1 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_62fb1] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [CMakeFiles/cmTC_62fb1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+        collapse obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "cmake/config-ix.cmake:4 (check_c_compiler_flag)"
+      - "CMakeLists.txt:54 (include)"
+    checks:
+      - "Performing Test OPENMP_HAVE_WERROR_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3Pduha"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3Pduha"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "OPENMP_HAVE_WERROR_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3Pduha'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_076b3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_076b3.dir/build.make CMakeFiles/cmTC_076b3.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3Pduha'
+        Building C object CMakeFiles/cmTC_076b3.dir/src.c.o
+        /usr/bin/clang-16 -DOPENMP_HAVE_WERROR_FLAG  -Werror -MD -MT CMakeFiles/cmTC_076b3.dir/src.c.o -MF CMakeFiles/cmTC_076b3.dir/src.c.o.d -o CMakeFiles/cmTC_076b3.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3Pduha/src.c
+        Linking C executable cmTC_076b3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_076b3.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_076b3.dir/src.c.o -o cmTC_076b3 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3Pduha'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/config-ix.cmake:6 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:54 (include)"
+    checks:
+      - "Performing Test OPENMP_HAVE_STD_GNUPP11_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-0nshdQ"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-0nshdQ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "OPENMP_HAVE_STD_GNUPP11_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-0nshdQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_89649/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_89649.dir/build.make CMakeFiles/cmTC_89649.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-0nshdQ'
+        Building CXX object CMakeFiles/cmTC_89649.dir/src.cxx.o
+        /usr/bin/clang++-16 -DOPENMP_HAVE_STD_GNUPP11_FLAG  -std=gnu++11 -MD -MT CMakeFiles/cmTC_89649.dir/src.cxx.o -MF CMakeFiles/cmTC_89649.dir/src.cxx.o.d -o CMakeFiles/cmTC_89649.dir/src.cxx.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-0nshdQ/src.cxx
+        Linking CXX executable cmTC_89649
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89649.dir/link.txt --verbose=1
+        /usr/bin/clang++-16 -rdynamic CMakeFiles/cmTC_89649.dir/src.cxx.o -o cmTC_89649 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-0nshdQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "cmake/config-ix.cmake:7 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:54 (include)"
+    checks:
+      - "Performing Test OPENMP_HAVE_STD_CPP11_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-HMYnQT"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-HMYnQT"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "OPENMP_HAVE_STD_CPP11_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-HMYnQT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_649c6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_649c6.dir/build.make CMakeFiles/cmTC_649c6.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-HMYnQT'
+        Building CXX object CMakeFiles/cmTC_649c6.dir/src.cxx.o
+        /usr/bin/clang++-16 -DOPENMP_HAVE_STD_CPP11_FLAG  -std=c++11 -MD -MT CMakeFiles/cmTC_649c6.dir/src.cxx.o -MF CMakeFiles/cmTC_649c6.dir/src.cxx.o.d -o CMakeFiles/cmTC_649c6.dir/src.cxx.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-HMYnQT/src.cxx
+        Linking CXX executable cmTC_649c6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_649c6.dir/link.txt --verbose=1
+        /usr/bin/clang++-16 -rdynamic CMakeFiles/cmTC_649c6.dir/src.cxx.o -o cmTC_649c6 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-HMYnQT'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "runtime/cmake/LibompGetArchitecture.cmake:57 (try_run)"
+      - "runtime/CMakeLists.txt:32 (libomp_get_architecture)"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "compile_dummy"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2c379/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2c379.dir/build.make CMakeFiles/cmTC_2c379.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_2c379.dir/libomp_detect_arch.c.o
+        /usr/bin/clang-16    -MD -MT CMakeFiles/cmTC_2c379.dir/libomp_detect_arch.c.o -MF CMakeFiles/cmTC_2c379.dir/libomp_detect_arch.c.o.d -o CMakeFiles/cmTC_2c379.dir/libomp_detect_arch.c.o -c /home/shaan/pcap/build/lb4omp-clang/runtime/libomp_detect_arch.c
+        /home/shaan/pcap/build/lb4omp-clang/runtime/libomp_detect_arch.c:5:8: error: ARCHITECTURE=x86_64
+              #error ARCHITECTURE=x86_64
+               ^
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_2c379.dir/build.make:79: CMakeFiles/cmTC_2c379.dir/libomp_detect_arch.c.o] Error 1
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_2c379/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_dummy"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:50 (check_cxx_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_FNO_EXCEPTIONS_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-tK1V01"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-tK1V01"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: " -std=gnu++11"
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_FNO_EXCEPTIONS_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-tK1V01'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_81151/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_81151.dir/build.make CMakeFiles/cmTC_81151.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-tK1V01'
+        Building CXX object CMakeFiles/cmTC_81151.dir/src.cxx.o
+        /usr/bin/clang++-16 -DLIBOMP_HAVE_FNO_EXCEPTIONS_FLAG  -std=gnu++11    -fno-exceptions -MD -MT CMakeFiles/cmTC_81151.dir/src.cxx.o -MF CMakeFiles/cmTC_81151.dir/src.cxx.o.d -o CMakeFiles/cmTC_81151.dir/src.cxx.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-tK1V01/src.cxx
+        Linking CXX executable cmTC_81151
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81151.dir/link.txt --verbose=1
+        /usr/bin/clang++-16  -std=gnu++11  -rdynamic CMakeFiles/cmTC_81151.dir/src.cxx.o -o cmTC_81151 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-tK1V01'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:51 (check_cxx_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_FNO_RTTI_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-FmEPAh"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-FmEPAh"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: " -std=gnu++11"
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_FNO_RTTI_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-FmEPAh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a7007/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a7007.dir/build.make CMakeFiles/cmTC_a7007.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-FmEPAh'
+        Building CXX object CMakeFiles/cmTC_a7007.dir/src.cxx.o
+        /usr/bin/clang++-16 -DLIBOMP_HAVE_FNO_RTTI_FLAG  -std=gnu++11    -fno-rtti -MD -MT CMakeFiles/cmTC_a7007.dir/src.cxx.o -MF CMakeFiles/cmTC_a7007.dir/src.cxx.o.d -o CMakeFiles/cmTC_a7007.dir/src.cxx.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-FmEPAh/src.cxx
+        Linking CXX executable cmTC_a7007
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7007.dir/link.txt --verbose=1
+        /usr/bin/clang++-16  -std=gnu++11  -rdynamic CMakeFiles/cmTC_a7007.dir/src.cxx.o -o cmTC_a7007 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-FmEPAh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:52 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_X_CPP_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-JNrDNK"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-JNrDNK"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_X_CPP_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-JNrDNK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b2e01/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b2e01.dir/build.make CMakeFiles/cmTC_b2e01.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-JNrDNK'
+        Building C object CMakeFiles/cmTC_b2e01.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_X_CPP_FLAG  -x c++ -MD -MT CMakeFiles/cmTC_b2e01.dir/src.c.o -MF CMakeFiles/cmTC_b2e01.dir/src.c.o.d -o CMakeFiles/cmTC_b2e01.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-JNrDNK/src.c
+        Linking C executable cmTC_b2e01
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2e01.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_b2e01.dir/src.c.o -o cmTC_b2e01 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-JNrDNK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:53 (check_cxx_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WCAST_QUAL_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-BPY5tf"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-BPY5tf"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: " -std=gnu++11"
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WCAST_QUAL_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-BPY5tf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5726b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5726b.dir/build.make CMakeFiles/cmTC_5726b.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-BPY5tf'
+        Building CXX object CMakeFiles/cmTC_5726b.dir/src.cxx.o
+        /usr/bin/clang++-16 -DLIBOMP_HAVE_WCAST_QUAL_FLAG  -std=gnu++11    -Wcast-qual -MD -MT CMakeFiles/cmTC_5726b.dir/src.cxx.o -MF CMakeFiles/cmTC_5726b.dir/src.cxx.o.d -o CMakeFiles/cmTC_5726b.dir/src.cxx.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-BPY5tf/src.cxx
+        Linking CXX executable cmTC_5726b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5726b.dir/link.txt --verbose=1
+        /usr/bin/clang++-16  -std=gnu++11  -rdynamic CMakeFiles/cmTC_5726b.dir/src.cxx.o -o cmTC_5726b 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-BPY5tf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:54 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_UNUSED_FUNCTION_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-o8lhXg"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-o8lhXg"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_UNUSED_FUNCTION_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-o8lhXg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_741f8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_741f8.dir/build.make CMakeFiles/cmTC_741f8.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-o8lhXg'
+        Building C object CMakeFiles/cmTC_741f8.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_UNUSED_FUNCTION_FLAG  -Wunused-function -MD -MT CMakeFiles/cmTC_741f8.dir/src.c.o -MF CMakeFiles/cmTC_741f8.dir/src.c.o.d -o CMakeFiles/cmTC_741f8.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-o8lhXg/src.c
+        Linking C executable cmTC_741f8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_741f8.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_741f8.dir/src.c.o -o cmTC_741f8 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-o8lhXg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:55 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_UNUSED_LOCAL_TYPEDEF_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-x0HaLO"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-x0HaLO"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_UNUSED_LOCAL_TYPEDEF_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-x0HaLO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6f133/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6f133.dir/build.make CMakeFiles/cmTC_6f133.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-x0HaLO'
+        Building C object CMakeFiles/cmTC_6f133.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_UNUSED_LOCAL_TYPEDEF_FLAG  -Wunused-local-typedef -MD -MT CMakeFiles/cmTC_6f133.dir/src.c.o -MF CMakeFiles/cmTC_6f133.dir/src.c.o.d -o CMakeFiles/cmTC_6f133.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-x0HaLO/src.c
+        Linking C executable cmTC_6f133
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f133.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_6f133.dir/src.c.o -o cmTC_6f133 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-x0HaLO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:56 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_UNUSED_VALUE_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8Xcbh9"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8Xcbh9"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_UNUSED_VALUE_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8Xcbh9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_131da/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_131da.dir/build.make CMakeFiles/cmTC_131da.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8Xcbh9'
+        Building C object CMakeFiles/cmTC_131da.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_UNUSED_VALUE_FLAG  -Wunused-value -MD -MT CMakeFiles/cmTC_131da.dir/src.c.o -MF CMakeFiles/cmTC_131da.dir/src.c.o.d -o CMakeFiles/cmTC_131da.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8Xcbh9/src.c
+        Linking C executable cmTC_131da
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_131da.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_131da.dir/src.c.o -o cmTC_131da 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8Xcbh9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:57 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_UNUSED_VARIABLE_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9J6Pw"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9J6Pw"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_UNUSED_VARIABLE_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9J6Pw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9dd4b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9dd4b.dir/build.make CMakeFiles/cmTC_9dd4b.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9J6Pw'
+        Building C object CMakeFiles/cmTC_9dd4b.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_UNUSED_VARIABLE_FLAG  -Wunused-variable -MD -MT CMakeFiles/cmTC_9dd4b.dir/src.c.o -MF CMakeFiles/cmTC_9dd4b.dir/src.c.o.d -o CMakeFiles/cmTC_9dd4b.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9J6Pw/src.c
+        Linking C executable cmTC_9dd4b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dd4b.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_9dd4b.dir/src.c.o -o cmTC_9dd4b 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9J6Pw'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:58 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_SWITCH_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9bklb"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9bklb"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_SWITCH_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9bklb'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0364b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0364b.dir/build.make CMakeFiles/cmTC_0364b.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9bklb'
+        Building C object CMakeFiles/cmTC_0364b.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_SWITCH_FLAG  -Wswitch -MD -MT CMakeFiles/cmTC_0364b.dir/src.c.o -MF CMakeFiles/cmTC_0364b.dir/src.c.o.d -o CMakeFiles/cmTC_0364b.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9bklb/src.c
+        Linking C executable cmTC_0364b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0364b.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_0364b.dir/src.c.o -o cmTC_0364b 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h9bklb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:59 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_COVERED_SWITCH_DEFAULT_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-gnSfMo"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-gnSfMo"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_COVERED_SWITCH_DEFAULT_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-gnSfMo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9f7e7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9f7e7.dir/build.make CMakeFiles/cmTC_9f7e7.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-gnSfMo'
+        Building C object CMakeFiles/cmTC_9f7e7.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_COVERED_SWITCH_DEFAULT_FLAG  -Wcovered-switch-default -MD -MT CMakeFiles/cmTC_9f7e7.dir/src.c.o -MF CMakeFiles/cmTC_9f7e7.dir/src.c.o.d -o CMakeFiles/cmTC_9f7e7.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-gnSfMo/src.c
+        Linking C executable cmTC_9f7e7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f7e7.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_9f7e7.dir/src.c.o -o cmTC_9f7e7 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-gnSfMo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:60 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_DEPRECATED_REGISTER_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VBAv5C"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VBAv5C"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_DEPRECATED_REGISTER_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VBAv5C'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1381f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1381f.dir/build.make CMakeFiles/cmTC_1381f.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VBAv5C'
+        Building C object CMakeFiles/cmTC_1381f.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_DEPRECATED_REGISTER_FLAG  -Wdeprecated-register -MD -MT CMakeFiles/cmTC_1381f.dir/src.c.o -MF CMakeFiles/cmTC_1381f.dir/src.c.o.d -o CMakeFiles/cmTC_1381f.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VBAv5C/src.c
+        Linking C executable cmTC_1381f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1381f.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_1381f.dir/src.c.o -o cmTC_1381f 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-VBAv5C'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:61 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_SIGN_COMPARE_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-toMfGq"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-toMfGq"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_SIGN_COMPARE_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-toMfGq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5d1e9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5d1e9.dir/build.make CMakeFiles/cmTC_5d1e9.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-toMfGq'
+        Building C object CMakeFiles/cmTC_5d1e9.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_SIGN_COMPARE_FLAG  -Wsign-compare -MD -MT CMakeFiles/cmTC_5d1e9.dir/src.c.o -MF CMakeFiles/cmTC_5d1e9.dir/src.c.o.d -o CMakeFiles/cmTC_5d1e9.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-toMfGq/src.c
+        Linking C executable cmTC_5d1e9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d1e9.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_5d1e9.dir/src.c.o -o cmTC_5d1e9 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-toMfGq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:62 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_GNU_ANONYMOUS_STRUCT_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-7pzAJ9"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-7pzAJ9"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_GNU_ANONYMOUS_STRUCT_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-7pzAJ9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7027c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7027c.dir/build.make CMakeFiles/cmTC_7027c.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-7pzAJ9'
+        Building C object CMakeFiles/cmTC_7027c.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_GNU_ANONYMOUS_STRUCT_FLAG  -Wgnu-anonymous-struct -MD -MT CMakeFiles/cmTC_7027c.dir/src.c.o -MF CMakeFiles/cmTC_7027c.dir/src.c.o.d -o CMakeFiles/cmTC_7027c.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-7pzAJ9/src.c
+        Linking C executable cmTC_7027c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7027c.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_7027c.dir/src.c.o -o cmTC_7027c 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-7pzAJ9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:63 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_UNKNOWN_PRAGMAS_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XnDJaM"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XnDJaM"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_UNKNOWN_PRAGMAS_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XnDJaM'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1ee09/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1ee09.dir/build.make CMakeFiles/cmTC_1ee09.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XnDJaM'
+        Building C object CMakeFiles/cmTC_1ee09.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_UNKNOWN_PRAGMAS_FLAG  -Wunknown-pragmas -MD -MT CMakeFiles/cmTC_1ee09.dir/src.c.o -MF CMakeFiles/cmTC_1ee09.dir/src.c.o.d -o CMakeFiles/cmTC_1ee09.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XnDJaM/src.c
+        Linking C executable cmTC_1ee09
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ee09.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_1ee09.dir/src.c.o -o cmTC_1ee09 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XnDJaM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:64 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_MISSING_FIELD_INITIALIZERS_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-4nNC9v"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-4nNC9v"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_MISSING_FIELD_INITIALIZERS_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-4nNC9v'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5be14/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5be14.dir/build.make CMakeFiles/cmTC_5be14.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-4nNC9v'
+        Building C object CMakeFiles/cmTC_5be14.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_MISSING_FIELD_INITIALIZERS_FLAG  -Wmissing-field-initializers -MD -MT CMakeFiles/cmTC_5be14.dir/src.c.o -MF CMakeFiles/cmTC_5be14.dir/src.c.o.d -o CMakeFiles/cmTC_5be14.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-4nNC9v/src.c
+        Linking C executable cmTC_5be14
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5be14.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_5be14.dir/src.c.o -o cmTC_5be14 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-4nNC9v'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:65 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_MISSING_BRACES_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-1wVMBr"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-1wVMBr"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_MISSING_BRACES_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-1wVMBr'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2daba/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2daba.dir/build.make CMakeFiles/cmTC_2daba.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-1wVMBr'
+        Building C object CMakeFiles/cmTC_2daba.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_MISSING_BRACES_FLAG  -Wmissing-braces -MD -MT CMakeFiles/cmTC_2daba.dir/src.c.o -MF CMakeFiles/cmTC_2daba.dir/src.c.o.d -o CMakeFiles/cmTC_2daba.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-1wVMBr/src.c
+        Linking C executable cmTC_2daba
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2daba.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_2daba.dir/src.c.o -o cmTC_2daba 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-1wVMBr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:66 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_COMMENT_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8uPpqt"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8uPpqt"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_COMMENT_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8uPpqt'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_feeb5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_feeb5.dir/build.make CMakeFiles/cmTC_feeb5.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8uPpqt'
+        Building C object CMakeFiles/cmTC_feeb5.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_COMMENT_FLAG  -Wcomment -MD -MT CMakeFiles/cmTC_feeb5.dir/src.c.o -MF CMakeFiles/cmTC_feeb5.dir/src.c.o.d -o CMakeFiles/cmTC_feeb5.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8uPpqt/src.c
+        Linking C executable cmTC_feeb5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_feeb5.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_feeb5.dir/src.c.o -o cmTC_feeb5 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-8uPpqt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:67 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_SELF_ASSIGN_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-K8zENK"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-K8zENK"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_SELF_ASSIGN_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-K8zENK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_41ce2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_41ce2.dir/build.make CMakeFiles/cmTC_41ce2.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-K8zENK'
+        Building C object CMakeFiles/cmTC_41ce2.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_SELF_ASSIGN_FLAG  -Wself-assign -MD -MT CMakeFiles/cmTC_41ce2.dir/src.c.o -MF CMakeFiles/cmTC_41ce2.dir/src.c.o.d -o CMakeFiles/cmTC_41ce2.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-K8zENK/src.c
+        Linking C executable cmTC_41ce2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41ce2.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_41ce2.dir/src.c.o -o cmTC_41ce2 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-K8zENK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:68 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_VLA_EXTENSION_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Qd10iq"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Qd10iq"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_VLA_EXTENSION_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Qd10iq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d1daa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d1daa.dir/build.make CMakeFiles/cmTC_d1daa.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Qd10iq'
+        Building C object CMakeFiles/cmTC_d1daa.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_VLA_EXTENSION_FLAG  -Wvla-extension -MD -MT CMakeFiles/cmTC_d1daa.dir/src.c.o -MF CMakeFiles/cmTC_d1daa.dir/src.c.o.d -o CMakeFiles/cmTC_d1daa.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Qd10iq/src.c
+        Linking C executable cmTC_d1daa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1daa.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_d1daa.dir/src.c.o -o cmTC_d1daa 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Qd10iq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:69 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WNO_FORMAT_PEDANTIC_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nTtcBL"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nTtcBL"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WNO_FORMAT_PEDANTIC_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nTtcBL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_614be/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_614be.dir/build.make CMakeFiles/cmTC_614be.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nTtcBL'
+        Building C object CMakeFiles/cmTC_614be.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WNO_FORMAT_PEDANTIC_FLAG  -Wformat-pedantic -MD -MT CMakeFiles/cmTC_614be.dir/src.c.o -MF CMakeFiles/cmTC_614be.dir/src.c.o.d -o CMakeFiles/cmTC_614be.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nTtcBL/src.c
+        Linking C executable cmTC_614be
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_614be.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_614be.dir/src.c.o -o cmTC_614be 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nTtcBL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:70 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WSTRINGOP_OVERFLOW_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-neP7Ny"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-neP7Ny"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WSTRINGOP_OVERFLOW_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-neP7Ny'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_25afb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_25afb.dir/build.make CMakeFiles/cmTC_25afb.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-neP7Ny'
+        Building C object CMakeFiles/cmTC_25afb.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WSTRINGOP_OVERFLOW_FLAG  -Wstringop-overflow=0 -MD -MT CMakeFiles/cmTC_25afb.dir/src.c.o -MF CMakeFiles/cmTC_25afb.dir/src.c.o.d -o CMakeFiles/cmTC_25afb.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-neP7Ny/src.c
+        warning: unknown warning option '-Wstringop-overflow=0'; did you mean '-Wshift-overflow'? [-Wunknown-warning-option]
+        1 warning generated.
+        Linking C executable cmTC_25afb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25afb.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_25afb.dir/src.c.o -o cmTC_25afb 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-neP7Ny'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:71 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_MSSE2_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Q1gApx"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Q1gApx"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_MSSE2_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Q1gApx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ccf34/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ccf34.dir/build.make CMakeFiles/cmTC_ccf34.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Q1gApx'
+        Building C object CMakeFiles/cmTC_ccf34.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_MSSE2_FLAG  -msse2 -MD -MT CMakeFiles/cmTC_ccf34.dir/src.c.o -MF CMakeFiles/cmTC_ccf34.dir/src.c.o.d -o CMakeFiles/cmTC_ccf34.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Q1gApx/src.c
+        Linking C executable cmTC_ccf34
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccf34.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_ccf34.dir/src.c.o -o cmTC_ccf34 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-Q1gApx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:72 (check_c_compiler_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_FTLS_MODEL_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-CMZnkS"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-CMZnkS"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_FTLS_MODEL_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-CMZnkS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8eefe/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8eefe.dir/build.make CMakeFiles/cmTC_8eefe.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-CMZnkS'
+        Building C object CMakeFiles/cmTC_8eefe.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_FTLS_MODEL_FLAG  -ftls-model=initial-exec -MD -MT CMakeFiles/cmTC_8eefe.dir/src.c.o -MF CMakeFiles/cmTC_8eefe.dir/src.c.o.d -o CMakeFiles/cmTC_8eefe.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-CMZnkS/src.c
+        Linking C executable cmTC_8eefe
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8eefe.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_8eefe.dir/src.c.o -o cmTC_8eefe 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-CMZnkS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:45 (check_c_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:73 (libomp_check_architecture_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_MMIC_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-65pFAw"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-65pFAw"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_MMIC_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-65pFAw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2b7a3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2b7a3.dir/build.make CMakeFiles/cmTC_2b7a3.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-65pFAw'
+        Building C object CMakeFiles/cmTC_2b7a3.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_MMIC_FLAG  -mmic   -mmic -MD -MT CMakeFiles/cmTC_2b7a3.dir/src.c.o -MF CMakeFiles/cmTC_2b7a3.dir/src.c.o.d -o CMakeFiles/cmTC_2b7a3.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-65pFAw/src.c
+        clang: error: unknown argument: '-mmic'
+        clang: error: unknown argument: '-mmic'
+        gmake[1]: *** [CMakeFiles/cmTC_2b7a3.dir/build.make:79: CMakeFiles/cmTC_2b7a3.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-65pFAw'
+        gmake: *** [Makefile:127: cmTC_2b7a3/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:45 (check_c_compiler_flag)"
+      - "runtime/cmake/config-ix.cmake:74 (libomp_check_architecture_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_M32_FLAG"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-szMQRe"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-szMQRe"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_M32_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-szMQRe'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f1baf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f1baf.dir/build.make CMakeFiles/cmTC_f1baf.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-szMQRe'
+        Building C object CMakeFiles/cmTC_f1baf.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_M32_FLAG  -m32   -m32 -MD -MT CMakeFiles/cmTC_f1baf.dir/src.c.o -MF CMakeFiles/cmTC_f1baf.dir/src.c.o.d -o CMakeFiles/cmTC_f1baf.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-szMQRe/src.c
+        Linking C executable cmTC_f1baf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1baf.dir/link.txt --verbose=1
+        /usr/bin/clang-16  -m32 -rdynamic CMakeFiles/cmTC_f1baf.dir/src.c.o -o cmTC_f1baf 
+        /usr/bin/ld: cannot find Scrt1.o: No such file or directory
+        /usr/bin/ld: cannot find crti.o: No such file or directory
+        /usr/bin/ld: cannot find crtbeginS.o: No such file or directory
+        /usr/bin/ld: cannot find -lgcc: No such file or directory
+        /usr/bin/ld: cannot find -lgcc_s: No such file or directory
+        /usr/bin/ld: skipping incompatible /usr/lib/x86_64-linux-gnu/libc.so when searching for -lc
+        /usr/bin/ld: skipping incompatible /usr/lib/x86_64-linux-gnu/libc.a when searching for -lc
+        /usr/bin/ld: cannot find -lc: No such file or directory
+        /usr/bin/ld: skipping incompatible /usr/lib/x86_64-linux-gnu/libc.so when searching for -lc
+        /usr/bin/ld: cannot find -lgcc: No such file or directory
+        /usr/bin/ld: cannot find -lgcc_s: No such file or directory
+        /usr/bin/ld: cannot find crtendS.o: No such file or directory
+        /usr/bin/ld: cannot find crtn.o: No such file or directory
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        gmake[1]: *** [CMakeFiles/cmTC_f1baf.dir/build.make:100: cmTC_f1baf] Error 1
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-szMQRe'
+        gmake: *** [Makefile:127: cmTC_f1baf/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "runtime/cmake/LibompCheckLinkerFlag.cmake:33 (try_compile)"
+      - "runtime/cmake/config-ix.cmake:114 (libomp_check_linker_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build"
+    buildResult:
+      variable: "try_compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG -B/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+        cd /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+        [ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+        /usr/bin/clang-16 -Dfoo_EXPORTS  -fPIC -MD -MT CMakeFiles/foo.dir/src_to_link.c.o -MF CMakeFiles/foo.dir/src_to_link.c.o.d -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/src_to_link.c
+        [100%] Linking C shared library libfoo.so
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -fPIC -Wl,-x -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+        [100%] Built target foo
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "runtime/cmake/LibompCheckLinkerFlag.cmake:33 (try_compile)"
+      - "runtime/cmake/config-ix.cmake:115 (libomp_check_linker_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build"
+    buildResult:
+      variable: "try_compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG -B/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+        cd /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+        [ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+        /usr/bin/clang-16 -Dfoo_EXPORTS  -fPIC -MD -MT CMakeFiles/foo.dir/src_to_link.c.o -MF CMakeFiles/foo.dir/src_to_link.c.o.d -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/src_to_link.c
+        [100%] Linking C shared library libfoo.so
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -fPIC -Wl,--warn-shared-textrel -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+        [100%] Built target foo
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "runtime/cmake/LibompCheckLinkerFlag.cmake:33 (try_compile)"
+      - "runtime/cmake/config-ix.cmake:116 (libomp_check_linker_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build"
+    buildResult:
+      variable: "try_compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG -B/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+        cd /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+        [ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+        /usr/bin/clang-16 -Dfoo_EXPORTS  -fPIC -MD -MT CMakeFiles/foo.dir/src_to_link.c.o -MF CMakeFiles/foo.dir/src_to_link.c.o.d -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/src_to_link.c
+        [100%] Linking C shared library libfoo.so
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -fPIC -Wl,--as-needed -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+        [100%] Built target foo
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "runtime/cmake/LibompCheckLinkerFlag.cmake:33 (try_compile)"
+      - "runtime/cmake/config-ix.cmake:117 (libomp_check_linker_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build"
+    buildResult:
+      variable: "try_compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG -B/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+        cd /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+        [ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+        /usr/bin/clang-16 -Dfoo_EXPORTS  -fPIC -MD -MT CMakeFiles/foo.dir/src_to_link.c.o -MF CMakeFiles/foo.dir/src_to_link.c.o.d -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/src_to_link.c
+        [100%] Linking C shared library libfoo.so
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -fPIC -Wl,--version-script=/home/shaan/pcap/vendor/LB4OMP/runtime/src/exports_so.txt -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+        [100%] Built target foo
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "runtime/cmake/LibompCheckLinkerFlag.cmake:33 (try_compile)"
+      - "runtime/cmake/config-ix.cmake:118 (libomp_check_linker_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build"
+    buildResult:
+      variable: "try_compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG -B/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+        cd /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+        [ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+        /usr/bin/clang-16 -Dfoo_EXPORTS  -fPIC -MD -MT CMakeFiles/foo.dir/src_to_link.c.o -MF CMakeFiles/foo.dir/src_to_link.c.o.d -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/src_to_link.c
+        [100%] Linking C shared library libfoo.so
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -fPIC -static-libgcc -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+        [100%] Built target foo
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "runtime/cmake/LibompCheckLinkerFlag.cmake:33 (try_compile)"
+      - "runtime/cmake/config-ix.cmake:119 (libomp_check_linker_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build"
+    buildResult:
+      variable: "try_compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG -B/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+        cd /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+        [ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+        /usr/bin/clang-16 -Dfoo_EXPORTS  -fPIC -MD -MT CMakeFiles/foo.dir/src_to_link.c.o -MF CMakeFiles/foo.dir/src_to_link.c.o.d -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/src_to_link.c
+        [100%] Linking C shared library libfoo.so
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -fPIC -Wl,-z,noexecstack -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+        [100%] Built target foo
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "runtime/cmake/LibompCheckLinkerFlag.cmake:33 (try_compile)"
+      - "runtime/cmake/config-ix.cmake:120 (libomp_check_linker_flag)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build"
+    buildResult:
+      variable: "try_compile_result"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /usr/bin/cmake -S/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG -B/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+        cd /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+        [ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+        /usr/bin/clang-16 -Dfoo_EXPORTS  -fPIC -MD -MT CMakeFiles/foo.dir/src_to_link.c.o -MF CMakeFiles/foo.dir/src_to_link.c.o.d -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/src_to_link.c
+        [100%] Linking C shared library libfoo.so
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -fPIC -Wl,-fini=__kmp_internal_end_fini -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+        gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+        [100%] Built target foo
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+        /usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "runtime/cmake/config-ix.cmake:137 (find_package)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h0U4wZ"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h0U4wZ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h0U4wZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_030d9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_030d9.dir/build.make CMakeFiles/cmTC_030d9.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h0U4wZ'
+        Building C object CMakeFiles/cmTC_030d9.dir/src.c.o
+        /usr/bin/clang-16 -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_030d9.dir/src.c.o -MF CMakeFiles/cmTC_030d9.dir/src.c.o.d -o CMakeFiles/cmTC_030d9.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h0U4wZ/src.c
+        Linking C executable cmTC_030d9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_030d9.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_030d9.dir/src.c.o -o cmTC_030d9 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-h0U4wZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "runtime/cmake/config-ix.cmake:37 (check_c_source_compiles)"
+      - "runtime/cmake/config-ix.cmake:175 (libomp_check_version_symbols)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_VERSION_SYMBOLS"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-qY7aGn"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-qY7aGn"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_VERSION_SYMBOLS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-qY7aGn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6d62a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6d62a.dir/build.make CMakeFiles/cmTC_6d62a.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-qY7aGn'
+        Building C object CMakeFiles/cmTC_6d62a.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_VERSION_SYMBOLS  -Wl,--version-script=/home/shaan/pcap/build/lb4omp-clang/runtime/__version_script.txt -MD -MT CMakeFiles/cmTC_6d62a.dir/src.c.o -MF CMakeFiles/cmTC_6d62a.dir/src.c.o.d -o CMakeFiles/cmTC_6d62a.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-qY7aGn/src.c
+        clang: warning: -Wl,--version-script=/home/shaan/pcap/build/lb4omp-clang/runtime/__version_script.txt: 'linker' input unused [-Wunused-command-line-argument]
+        Linking C executable cmTC_6d62a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d62a.dir/link.txt --verbose=1
+        /usr/bin/clang-16  -Wl,--version-script=/home/shaan/pcap/build/lb4omp-clang/runtime/__version_script.txt -rdynamic CMakeFiles/cmTC_6d62a.dir/src.c.o -o cmTC_6d62a 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-qY7aGn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "runtime/cmake/config-ix.cmake:230 (check_c_source_compiles)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE___BUILTIN_FRAME_ADDRESS"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3kCLP4"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3kCLP4"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE___BUILTIN_FRAME_ADDRESS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3kCLP4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5a35c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5a35c.dir/build.make CMakeFiles/cmTC_5a35c.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3kCLP4'
+        Building C object CMakeFiles/cmTC_5a35c.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE___BUILTIN_FRAME_ADDRESS   -MD -MT CMakeFiles/cmTC_5a35c.dir/src.c.o -MF CMakeFiles/cmTC_5a35c.dir/src.c.o.d -o CMakeFiles/cmTC_5a35c.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3kCLP4/src.c
+        Linking C executable cmTC_5a35c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a35c.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_5a35c.dir/src.c.o -o cmTC_5a35c 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-3kCLP4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "runtime/cmake/config-ix.cmake:233 (check_c_source_compiles)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Performing Test LIBOMP_HAVE_WEAK_ATTRIBUTE"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XwgL5W"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XwgL5W"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_WEAK_ATTRIBUTE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XwgL5W'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fa9c5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fa9c5.dir/build.make CMakeFiles/cmTC_fa9c5.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XwgL5W'
+        Building C object CMakeFiles/cmTC_fa9c5.dir/src.c.o
+        /usr/bin/clang-16 -DLIBOMP_HAVE_WEAK_ATTRIBUTE   -MD -MT CMakeFiles/cmTC_fa9c5.dir/src.c.o -MF CMakeFiles/cmTC_fa9c5.dir/src.c.o.d -o CMakeFiles/cmTC_fa9c5.dir/src.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XwgL5W/src.c
+        Linking C executable cmTC_fa9c5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa9c5.dir/link.txt --verbose=1
+        /usr/bin/clang-16 -rdynamic CMakeFiles/cmTC_fa9c5.dir/src.c.o -o cmTC_fa9c5 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-XwgL5W'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "runtime/cmake/config-ix.cmake:236 (check_include_files)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Looking for include files windows.h, psapi.h"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nylsJ7"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nylsJ7"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_PSAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nylsJ7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_678dc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_678dc.dir/build.make CMakeFiles/cmTC_678dc.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nylsJ7'
+        Building C object CMakeFiles/cmTC_678dc.dir/LIBOMP_HAVE_PSAPI_H.c.o
+        /usr/bin/clang-16    -MD -MT CMakeFiles/cmTC_678dc.dir/LIBOMP_HAVE_PSAPI_H.c.o -MF CMakeFiles/cmTC_678dc.dir/LIBOMP_HAVE_PSAPI_H.c.o.d -o CMakeFiles/cmTC_678dc.dir/LIBOMP_HAVE_PSAPI_H.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nylsJ7/LIBOMP_HAVE_PSAPI_H.c
+        /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nylsJ7/LIBOMP_HAVE_PSAPI_H.c:2:10: fatal error: 'windows.h' file not found
+        #include <windows.h>
+                 ^~~~~~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_678dc.dir/build.make:79: CMakeFiles/cmTC_678dc.dir/LIBOMP_HAVE_PSAPI_H.c.o] Error 1
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-nylsJ7'
+        gmake: *** [Makefile:127: cmTC_678dc/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "runtime/cmake/config-ix.cmake:237 (check_library_exists)"
+      - "runtime/CMakeLists.txt:234 (include)"
+    checks:
+      - "Looking for EnumProcessModules in psapi"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-jp7cEX"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-jp7cEX"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_LIBPSAPI"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-jp7cEX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1edb8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1edb8.dir/build.make CMakeFiles/cmTC_1edb8.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-jp7cEX'
+        Building C object CMakeFiles/cmTC_1edb8.dir/CheckFunctionExists.c.o
+        /usr/bin/clang-16   -DCHECK_FUNCTION_EXISTS=EnumProcessModules -MD -MT CMakeFiles/cmTC_1edb8.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_1edb8.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_1edb8.dir/CheckFunctionExists.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-jp7cEX/CheckFunctionExists.c
+        Linking C executable cmTC_1edb8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1edb8.dir/link.txt --verbose=1
+        /usr/bin/clang-16  -DCHECK_FUNCTION_EXISTS=EnumProcessModules -rdynamic CMakeFiles/cmTC_1edb8.dir/CheckFunctionExists.c.o -o cmTC_1edb8  -lpsapi 
+        /usr/bin/ld: cannot find -lpsapi: No such file or directory
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        gmake[1]: *** [CMakeFiles/cmTC_1edb8.dir/build.make:100: cmTC_1edb8] Error 1
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-jp7cEX'
+        gmake: *** [Makefile:127: cmTC_1edb8/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "runtime/test/CMakeLists.txt:6 (check_library_exists)"
+    checks:
+      - "Looking for sqrt in m"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-xk1Evc"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-xk1Evc"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_LIBM"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-xk1Evc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e05ee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e05ee.dir/build.make CMakeFiles/cmTC_e05ee.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-xk1Evc'
+        Building C object CMakeFiles/cmTC_e05ee.dir/CheckFunctionExists.c.o
+        /usr/bin/clang-16   -DCHECK_FUNCTION_EXISTS=sqrt -MD -MT CMakeFiles/cmTC_e05ee.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_e05ee.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_e05ee.dir/CheckFunctionExists.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-xk1Evc/CheckFunctionExists.c
+        /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-xk1Evc/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'sqrt' [-Wincompatible-library-redeclaration]
+          CHECK_FUNCTION_EXISTS(void);
+          ^
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+        #define CHECK_FUNCTION_EXISTS sqrt
+                                      ^
+        /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-xk1Evc/CheckFunctionExists.c:7:3: note: 'sqrt' is a builtin with type 'double (double)'
+        <command line>:1:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+        #define CHECK_FUNCTION_EXISTS sqrt
+                                      ^
+        1 warning generated.
+        Linking C executable cmTC_e05ee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e05ee.dir/link.txt --verbose=1
+        /usr/bin/clang-16  -DCHECK_FUNCTION_EXISTS=sqrt -rdynamic CMakeFiles/cmTC_e05ee.dir/CheckFunctionExists.c.o -o cmTC_e05ee  -lm 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-xk1Evc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "runtime/test/CMakeLists.txt:11 (check_function_exists)"
+    checks:
+      - "Looking for __atomic_load_1"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-RB6Sis"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-RB6Sis"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_BUILTIN_ATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-RB6Sis'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0f693/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0f693.dir/build.make CMakeFiles/cmTC_0f693.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-RB6Sis'
+        Building C object CMakeFiles/cmTC_0f693.dir/CheckFunctionExists.c.o
+        /usr/bin/clang-16   -DCHECK_FUNCTION_EXISTS=__atomic_load_1 -MD -MT CMakeFiles/cmTC_0f693.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_0f693.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_0f693.dir/CheckFunctionExists.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-RB6Sis/CheckFunctionExists.c
+        Linking C executable cmTC_0f693
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f693.dir/link.txt --verbose=1
+        /usr/bin/clang-16  -DCHECK_FUNCTION_EXISTS=__atomic_load_1 -rdynamic CMakeFiles/cmTC_0f693.dir/CheckFunctionExists.c.o -o cmTC_0f693 
+        /usr/bin/ld: CMakeFiles/cmTC_0f693.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x17): undefined reference to `__atomic_load_1'
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        gmake[1]: *** [CMakeFiles/cmTC_0f693.dir/build.make:100: cmTC_0f693] Error 1
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-RB6Sis'
+        gmake: *** [Makefile:127: cmTC_0f693/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "runtime/test/CMakeLists.txt:13 (check_library_exists)"
+    checks:
+      - "Looking for __atomic_load_1 in atomic"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-39io9E"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-39io9E"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "LIBOMP_HAVE_LIBATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-39io9E'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e735c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e735c.dir/build.make CMakeFiles/cmTC_e735c.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-39io9E'
+        Building C object CMakeFiles/cmTC_e735c.dir/CheckFunctionExists.c.o
+        /usr/bin/clang-16   -DCHECK_FUNCTION_EXISTS=__atomic_load_1 -MD -MT CMakeFiles/cmTC_e735c.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_e735c.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_e735c.dir/CheckFunctionExists.c.o -c /home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-39io9E/CheckFunctionExists.c
+        Linking C executable cmTC_e735c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e735c.dir/link.txt --verbose=1
+        /usr/bin/clang-16  -DCHECK_FUNCTION_EXISTS=__atomic_load_1 -rdynamic CMakeFiles/cmTC_e735c.dir/CheckFunctionExists.c.o -o cmTC_e735c  -latomic 
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/CMakeFiles/CMakeScratch/TryCompile-39io9E'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "runtime/cmake/LibompGetArchitecture.cmake:57 (try_run)"
+      - "runtime/CMakeLists.txt:32 (libomp_get_architecture)"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "compile_dummy"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a49ee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a49ee.dir/build.make CMakeFiles/cmTC_a49ee.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_a49ee.dir/libomp_detect_arch.c.o
+        /usr/bin/clang-16    -MD -MT CMakeFiles/cmTC_a49ee.dir/libomp_detect_arch.c.o -MF CMakeFiles/cmTC_a49ee.dir/libomp_detect_arch.c.o.d -o CMakeFiles/cmTC_a49ee.dir/libomp_detect_arch.c.o -c /home/shaan/pcap/build/lb4omp-clang/runtime/libomp_detect_arch.c
+        /home/shaan/pcap/build/lb4omp-clang/runtime/libomp_detect_arch.c:5:8: error: ARCHITECTURE=x86_64
+              #error ARCHITECTURE=x86_64
+               ^
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_a49ee.dir/build.make:79: CMakeFiles/cmTC_a49ee.dir/libomp_detect_arch.c.o] Error 1
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_a49ee/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_dummy"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "runtime/cmake/LibompGetArchitecture.cmake:57 (try_run)"
+      - "runtime/CMakeLists.txt:32 (libomp_get_architecture)"
+    directories:
+      source: "/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp"
+      binary: "/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/shaan/pcap/vendor/LB4OMP/runtime/cmake;/home/shaan/pcap/vendor/LB4OMP/cmake"
+    buildResult:
+      variable: "compile_dummy"
+      cached: true
+      stdout: |
+        Change Dir: '/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_91695/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_91695.dir/build.make CMakeFiles/cmTC_91695.dir/build
+        gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_91695.dir/libomp_detect_arch.c.o
+        /usr/bin/clang-16    -MD -MT CMakeFiles/cmTC_91695.dir/libomp_detect_arch.c.o -MF CMakeFiles/cmTC_91695.dir/libomp_detect_arch.c.o.d -o CMakeFiles/cmTC_91695.dir/libomp_detect_arch.c.o -c /home/shaan/pcap/build/lb4omp-clang/runtime/libomp_detect_arch.c
+        /home/shaan/pcap/build/lb4omp-clang/runtime/libomp_detect_arch.c:5:8: error: ARCHITECTURE=x86_64
+              #error ARCHITECTURE=x86_64
+               ^
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_91695.dir/build.make:79: CMakeFiles/cmTC_91695.dir/libomp_detect_arch.c.o] Error 1
+        gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp-clang/runtime/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_91695/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_dummy"
+      cached: true
+...

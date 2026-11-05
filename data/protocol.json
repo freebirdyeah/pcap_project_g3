@@ -1,0 +1,178 @@
+{
+  "horizon": 500,
+  "repetitions": 5,
+  "training_ids": [
+    "mandelbrot_s0_p2",
+    "mandelbrot_s0_p4",
+    "mandelbrot_s1_p2",
+    "mandelbrot_s1_p4",
+    "triad_s0_p2",
+    "triad_s0_p4",
+    "triad_s1_p2",
+    "triad_s1_p4",
+    "triangle_s0_p2",
+    "triangle_s0_p4",
+    "triangle_s1_p2",
+    "triangle_s1_p4"
+  ],
+  "test_ids": [
+    "mandelbrot_s2_p2",
+    "mandelbrot_s2_p4",
+    "mandelbrot_s3_p2",
+    "mandelbrot_s3_p4",
+    "triad_s2_p2",
+    "triad_s2_p4",
+    "triad_s3_p2",
+    "triad_s3_p4",
+    "triangle_s2_p2",
+    "triangle_s2_p4",
+    "triangle_s3_p2",
+    "triangle_s3_p4"
+  ],
+  "selected": {
+    "weight": 0.25,
+    "ridge": 1.0,
+    "alpha": 0.025,
+    "score": 1.0095358890862134
+  },
+  "validation": [
+    {
+      "weight": 0.25,
+      "ridge": 0.1,
+      "alpha": 0.025,
+      "score": 1.0135925254815517
+    },
+    {
+      "weight": 0.25,
+      "ridge": 0.1,
+      "alpha": 0.1,
+      "score": 1.0133298949911351
+    },
+    {
+      "weight": 0.25,
+      "ridge": 0.1,
+      "alpha": 0.4,
+      "score": 1.0394994431132765
+    },
+    {
+      "weight": 0.25,
+      "ridge": 1.0,
+      "alpha": 0.025,
+      "score": 1.0095358890862134
+    },
+    {
+      "weight": 0.25,
+      "ridge": 1.0,
+      "alpha": 0.1,
+      "score": 1.0156168386782531
+    },
+    {
+      "weight": 0.25,
+      "ridge": 1.0,
+      "alpha": 0.4,
+      "score": 1.0394081820617376
+    },
+    {
+      "weight": 1.0,
+      "ridge": 0.1,
+      "alpha": 0.025,
+      "score": 1.0139794524651893
+    },
+    {
+      "weight": 1.0,
+      "ridge": 0.1,
+      "alpha": 0.1,
+      "score": 1.0154267138988673
+    },
+    {
+      "weight": 1.0,
+      "ridge": 0.1,
+      "alpha": 0.4,
+      "score": 1.039058400232487
+    },
+    {
+      "weight": 1.0,
+      "ridge": 1.0,
+      "alpha": 0.025,
+      "score": 1.0138243281875605
+    },
+    {
+      "weight": 1.0,
+      "ridge": 1.0,
+      "alpha": 0.1,
+      "score": 1.0150014138580168
+    },
+    {
+      "weight": 1.0,
+      "ridge": 1.0,
+      "alpha": 0.4,
+      "score": 1.0385059240957648
+    },
+    {
+      "weight": 4.0,
+      "ridge": 0.1,
+      "alpha": 0.025,
+      "score": 1.0193653821335171
+    },
+    {
+      "weight": 4.0,
+      "ridge": 0.1,
+      "alpha": 0.1,
+      "score": 1.0223931210653183
+    },
+    {
+      "weight": 4.0,
+      "ridge": 0.1,
+      "alpha": 0.4,
+      "score": 1.0365265381659445
+    },
+    {
+      "weight": 4.0,
+      "ridge": 1.0,
+      "alpha": 0.025,
+      "score": 1.01623578191193
+    },
+    {
+      "weight": 4.0,
+      "ridge": 1.0,
+      "alpha": 0.1,
+      "score": 1.021013519046945
+    },
+    {
+      "weight": 4.0,
+      "ridge": 1.0,
+      "alpha": 0.4,
+      "score": 1.035023044732371
+    }
+  ],
+  "reduced": [
+    0,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "reduced_names": [
+    "STATIC",
+    "AutoLLVM",
+    "GSS",
+    "mFAC2",
+    "StaticSteal",
+    "AWFB"
+  ],
+  "best_fixed": 9,
+  "best_fixed_name": "AWFD",
+  "feature_dim": 6,
+  "feature_names": [
+    "intercept",
+    "log2_N",
+    "log2_P",
+    "log2_static_probe_s",
+    "static_lib",
+    "static_cv"
+  ],
+  "validation_method": "leave-one-kind-and-seed-out; deterministic median-cost surrogate, 200 rounds",
+  "calibration_total_s": 0.3370910879984812,
+  "notes": "Validation uses calibration measurements only; simulated validation is not a measured online result."
+}

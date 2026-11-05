@@ -1,0 +1,39 @@
+{
+  "config": {
+    "id": "triad_s6_p4",
+    "kind": "triad",
+    "n": 458752,
+    "seed": 6,
+    "p": 4,
+    "split": "test"
+  },
+  "policy": "reference",
+  "horizon": 25,
+  "budget": 0,
+  "arm": 9,
+  "rep": 3,
+  "started_unix": 1792748475.5233738,
+  "process_wall_s": 0.06063254299806431,
+  "process_cpu_s": 0.16521600000024605,
+  "stderr": "CHECK 3281450.3500000075 3281450.3500000075 SELECTED 9 EVALUATIONS 0\n",
+  "stdout": "",
+  "returncode": 0,
+  "command": [
+    "/home/shaan/pcap/build/tradeoff",
+    "triad",
+    "458752",
+    "6",
+    "4",
+    "reference",
+    "25",
+    "none",
+    "/home/shaan/pcap/tradeoff/data/reference/triad_s6_p4__a9__b3.csv",
+    "0",
+    "9"
+  ],
+  "executable_sha256": "482362701636a96dda0586a376ac90f49eb5b5cfa47913f8031faf6fd4a82724",
+  "model_sha256": null,
+  "protocol_sha256": "241af3a4f2eff3c164b4c10d90633253a3ac0fc16328c3dee67803aec3ec3118",
+  "csv_sha256": "0a2e691143c80d637d049f2c5375709b0d5f5f352faf432de1cbb070276ac263",
+  "summary_sha256": "dbc1cd42b95b82319b5be2b8bb9e1e96eb36e9a3935a2a873f7faa5a0fd85857"
+}

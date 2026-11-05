@@ -1,0 +1,31 @@
+{
+  "config": {
+    "id": "triad_s2_p2",
+    "kind": "triad",
+    "n": 393216,
+    "seed": 2,
+    "p": 2,
+    "split": "test"
+  },
+  "policy": "bestfixed",
+  "horizon": 500,
+  "arm": 0,
+  "golden": true,
+  "command": [
+    "/home/shaan/pcap/build/experiment",
+    "triad",
+    "393216",
+    "2",
+    "2",
+    "bestfixed",
+    "500",
+    "/home/shaan/pcap/data/model_without_triad.txt",
+    "/home/shaan/pcap/data/transfer/triad_s2_p2__bestfixed__r2.csv",
+    "0"
+  ],
+  "started_unix": 1792742712.3929715,
+  "elapsed_s": 0.31233787536621094,
+  "stderr": "CHECK 2812671.7920000018 2812671.7920000018 WALL 0.28123110900014581 N 393216 P 2\n",
+  "returncode": 0,
+  "csv_sha256": "e3da6175821256dfb5a2bc13bb2b738fca62bed3421a790cbd62dbad3b37d2b8"
+}

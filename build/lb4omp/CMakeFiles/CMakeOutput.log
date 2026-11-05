@@ -1,0 +1,210 @@
+Performing C Linker Flag test LIBOMP_HAVE_X_FLAG succeeded with the following output:
+Change Dir: '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+/usr/bin/cmake -S/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG -B/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+cd /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Scanning dependencies of target foo
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+[ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+/usr/bin/gcc -Dfoo_EXPORTS  -fPIC -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/src_to_link.c
+[100%] Linking C shared library libfoo.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+/usr/bin/gcc -fPIC -Wl,-x -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+[100%] Built target foo
+gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build'
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_X_FLAG/build/CMakeFiles 0
+
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG succeeded with the following output:
+Change Dir: '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+/usr/bin/cmake -S/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG -B/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+cd /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Scanning dependencies of target foo
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+[ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+/usr/bin/gcc -Dfoo_EXPORTS  -fPIC -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/src_to_link.c
+[100%] Linking C shared library libfoo.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+/usr/bin/gcc -fPIC -Wl,--warn-shared-textrel -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+[100%] Built target foo
+gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build'
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_WARN_SHARED_TEXTREL_FLAG/build/CMakeFiles 0
+
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_AS_NEEDED_FLAG succeeded with the following output:
+Change Dir: '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+/usr/bin/cmake -S/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG -B/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+cd /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Scanning dependencies of target foo
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+[ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+/usr/bin/gcc -Dfoo_EXPORTS  -fPIC -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/src_to_link.c
+[100%] Linking C shared library libfoo.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+/usr/bin/gcc -fPIC -Wl,--as-needed -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+[100%] Built target foo
+gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build'
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_AS_NEEDED_FLAG/build/CMakeFiles 0
+
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_VERSION_SCRIPT_FLAG succeeded with the following output:
+Change Dir: '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+/usr/bin/cmake -S/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG -B/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+cd /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Scanning dependencies of target foo
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+[ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+/usr/bin/gcc -Dfoo_EXPORTS  -fPIC -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/src_to_link.c
+[100%] Linking C shared library libfoo.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+/usr/bin/gcc -fPIC -Wl,--version-script=/home/shaan/pcap/vendor/LB4OMP/runtime/src/exports_so.txt -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+[100%] Built target foo
+gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build'
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_VERSION_SCRIPT_FLAG/build/CMakeFiles 0
+
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_STATIC_LIBGCC_FLAG succeeded with the following output:
+Change Dir: '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+/usr/bin/cmake -S/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG -B/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+cd /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Scanning dependencies of target foo
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+[ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+/usr/bin/gcc -Dfoo_EXPORTS  -fPIC -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/src_to_link.c
+[100%] Linking C shared library libfoo.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+/usr/bin/gcc -fPIC -static-libgcc -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+[100%] Built target foo
+gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build'
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_STATIC_LIBGCC_FLAG/build/CMakeFiles 0
+
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_Z_NOEXECSTACK_FLAG succeeded with the following output:
+Change Dir: '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+/usr/bin/cmake -S/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG -B/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+cd /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Scanning dependencies of target foo
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+[ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+/usr/bin/gcc -Dfoo_EXPORTS  -fPIC -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/src_to_link.c
+[100%] Linking C shared library libfoo.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+/usr/bin/gcc -fPIC -Wl,-z,noexecstack -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+[100%] Built target foo
+gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build'
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_Z_NOEXECSTACK_FLAG/build/CMakeFiles 0
+
+
+Source file was:
+int foo(int a) { return a*a; }
+Performing C Linker Flag test LIBOMP_HAVE_FINI_FLAG succeeded with the following output:
+Change Dir: '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+/usr/bin/cmake -S/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG -B/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build/CMakeFiles /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build//CMakeFiles/progress.marks
+/usr/bin/gmake  -f CMakeFiles/Makefile2 all
+gmake[1]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+cd /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Dependee "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build/CMakeFiles/foo.dir/depend.internal".
+Scanning dependencies of target foo
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+/usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+gmake[2]: Entering directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+[ 50%] Building C object CMakeFiles/foo.dir/src_to_link.c.o
+/usr/bin/gcc -Dfoo_EXPORTS  -fPIC -o CMakeFiles/foo.dir/src_to_link.c.o -c /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/src_to_link.c
+[100%] Linking C shared library libfoo.so
+/usr/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+/usr/bin/gcc -fPIC -Wl,-fini=__kmp_internal_end_fini -shared -Wl,-soname,libfoo.so -o libfoo.so CMakeFiles/foo.dir/src_to_link.c.o 
+gmake[2]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+[100%] Built target foo
+gmake[1]: Leaving directory '/home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build'
+/usr/bin/cmake -E cmake_progress_start /home/shaan/pcap/build/lb4omp/CMakeFiles/CMakeTmp/link_flag_check_LIBOMP_HAVE_FINI_FLAG/build/CMakeFiles 0
+
+
+Source file was:
+int foo(int a) { return a*a; }
