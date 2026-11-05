@@ -1,5 +1,6 @@
 \documentclass[conference]{IEEEtran}
-\usepackage{amsmath,amssymb,array,graphicx,url}
+\usepackage{amsmath,amssymb,array,graphicx,url,fancyhdr}
+\fancypagestyle{firstpage}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[C]{\parbox{\textwidth}{\footnotesize AI coding assistants were used for coding and making graphs in this study. The authors take responsibility for the study and its contents.}}}
 \setlength{\emergencystretch}{2em}
 \renewcommand{\arraystretch}{1.12}
 \setlength{\tabcolsep}{4pt}
@@ -14,6 +15,7 @@ Manipal Institute of Technology\\
 Group 3: 240905140, 240905026, 240905156}}
 \begin{document}
 \maketitle
+\thispagestyle{firstpage}
 \begin{abstract}
 Finding the fastest loop scheduler is useful only when the improvement repays
 the cost of finding it. We investigate this exchange for OpenMP scheduling:
@@ -590,9 +592,7 @@ on its own terms without requiring it to be the fastest scheduler.
 
 The accompanying artifact contains the frozen design, fresh raw phase timings,
 direct CPU measurements, process checksums, models, source and dependency
-hashes, analysis, figures, and this LaTeX manuscript. AI coding assistants
-were used for coding and making graphs in this study. The authors take
-responsibility for the study and its contents.
+hashes, analysis, figures, and this LaTeX manuscript.
 
 \begin{thebibliography}{99}
 \bibitem{openmp} OpenMP Architecture Review Board. OpenMP Application
